@@ -89,7 +89,7 @@
         </option>
         <option>
           <name>OGChipSelectEditMenu</name>
-          <state>CC2538SF53	TexasInstruments CC2538SF53</state>
+          <state>CC2538SF23	TexasInstruments CC2538SF23</state>
         </option>
         <option>
           <name>GenLowLevelInterface</name>
@@ -149,7 +149,7 @@
         </option>
         <option>
           <name>GFPUDeviceSlave</name>
-          <state>CC2538SF53	TexasInstruments CC2538SF53</state>
+          <state>CC2538SF23	TexasInstruments CC2538SF23</state>
         </option>
         <option>
           <name>FPU2</name>
