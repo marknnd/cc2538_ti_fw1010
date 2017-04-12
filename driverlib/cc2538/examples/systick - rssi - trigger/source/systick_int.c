@@ -56,7 +56,16 @@
 
 // Define choose mode Master/Slave
 #define MEASURE_PERIOD_ENABLE_CONF      1
-#define MEASURE_TIME 500       // 500ms -> Measure_ms/stick_Int = Measure_ms/0.5ms = Measure_ms*2 = 500*2 = 1000
+#define MEASURE_TIME                    500       // 500ms -> Measure_ms/stick_Int = Measure_ms/0.5ms = Measure_ms*2 = 500*2 = 1000
+
+// Define RF
+#define CC2538_RF_CHANNEL               12
+#define CC2538_RF_CHANNEL_MIN           11
+#define CC2538_RF_CHANNEL_SPACING       5
+#define CC2538_RF_MAX_PACKET_LEN        127
+#define RSSI_OFFSET                     73
+#define RFCORE_XREG_RSSI_RSSI_VAL       0x000000FF /**< RSSI estimate */
+#define ANA_REGS_IVCTRL                 0x400D6004 // Controls bias currents. User guide page 703
 
 // Define for UART0
 #define EXAMPLE_PIN_UART_RXD            GPIO_PIN_0 
@@ -64,25 +73,16 @@
 #define EXAMPLE_GPIO_UART_BASE          GPIO_A_BASE
 
 // RF OPCODES
-#define CC2538_RF_CSP_OP_ISRXON                0xE3
-#define CC2538_RF_CSP_OP_ISTXON                0xE9
-#define CC2538_RF_CSP_OP_ISTXONCCA             0xEA
-#define CC2538_RF_CSP_OP_ISRFOFF               0xEF
-#define CC2538_RF_CSP_OP_ISFLUSHRX             0xED
-#define CC2538_RF_CSP_OP_ISFLUSHTX             0xEE
-
-// Define RF
-#define CC2538_RF_CHANNEL               12
-#define CC2538_RF_CHANNEL_MIN           11
-#define CC2538_RF_CHANNEL_SPACING       5
-#define CC2538_RF_MAX_PACKET_LEN        127
-#define RSSI_OFFSET    73
-#define RFCORE_XREG_RSSI_RSSI_VAL 0x000000FF /**< RSSI estimate */
-#define ANA_REGS_IVCTRL       0x400D6004 // Controls bias currents. User guide page 703
+#define CC2538_RF_CSP_OP_ISRXON         0xE3
+#define CC2538_RF_CSP_OP_ISTXON         0xE9
+#define CC2538_RF_CSP_OP_ISTXONCCA      0xEA
+#define CC2538_RF_CSP_OP_ISRFOFF        0xEF
+#define CC2538_RF_CSP_OP_ISFLUSHRX      0xED
+#define CC2538_RF_CSP_OP_ISFLUSHTX      0xEE
 
 // Define User Button PC3
-#define USERBUTTON_GPIO_BASE               GPIO_C_BASE
-#define USERBUTTON_GPIO_PIN                GPIO_PIN_3
+#define USERBUTTON_GPIO_BASE            GPIO_C_BASE
+#define USERBUTTON_GPIO_PIN             GPIO_PIN_3
 
 // Define trigger pin PD3
 #define TRIGGER_GPIO_BASE               GPIO_D_BASE
@@ -90,11 +90,11 @@
 #define TRIGGER_INT_GPIO                INT_GPIOD
 
 // Define debug LED/sync LED at PC4-PC7(RED-GREEN-BLUE-YELLOW) 
-#define LEDS_RED GPIO_PIN_4
-#define LEDS_GREEN GPIO_PIN_5
-#define LEDS_BLUE GPIO_PIN_6
-#define LEDS_YELLOW GPIO_PIN_7
-#define LEDS_PORT_BASE GPIO_C_BASE
+#define LEDS_RED                        GPIO_PIN_4
+#define LEDS_GREEN                      GPIO_PIN_5
+#define LEDS_BLUE                       GPIO_PIN_6
+#define LEDS_YELLOW                     GPIO_PIN_7
+#define LEDS_PORT_BASE                  GPIO_C_BASE
 
 // Counter to count the number of interrupts that have been called.
 volatile uint32_t channel = CC2538_RF_CHANNEL;

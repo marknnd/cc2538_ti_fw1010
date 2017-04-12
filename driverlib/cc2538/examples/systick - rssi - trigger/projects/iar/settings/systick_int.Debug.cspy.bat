@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "E:\OneDrive - Singapore University of Technology and Design\802154\OpenMote\swrc271a\cc2538_foundation_firmware_1_0_1_0\driverlib\cc2538\examples\systick - rssi - trigger\projects\iar\settings\systick_int.Debug.general.xcl" --backend -f "E:\OneDrive - Singapore University of Technology and Design\802154\OpenMote\swrc271a\cc2538_foundation_firmware_1_0_1_0\driverlib\cc2538\examples\systick - rssi - trigger\projects\iar\settings\systick_int.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "E:\GitHub\cc2538_ti_fw1010\driverlib\cc2538\examples\systick - rssi - trigger\projects\iar\settings\systick_int.Debug.general.xcl" --backend -f "E:\GitHub\cc2538_ti_fw1010\driverlib\cc2538\examples\systick - rssi - trigger\projects\iar\settings\systick_int.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "E:\OneDrive - Singapore University of Technology and Design\802154\OpenMote\swrc271a\cc2538_foundation_firmware_1_0_1_0\driverlib\cc2538\examples\systick - rssi - trigger\projects\iar\settings\systick_int.Debug.general.xcl" "--debug_file=%~1" --backend -f "E:\OneDrive - Singapore University of Technology and Design\802154\OpenMote\swrc271a\cc2538_foundation_firmware_1_0_1_0\driverlib\cc2538\examples\systick - rssi - trigger\projects\iar\settings\systick_int.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "E:\GitHub\cc2538_ti_fw1010\driverlib\cc2538\examples\systick - rssi - trigger\projects\iar\settings\systick_int.Debug.general.xcl" "--debug_file=%~1" --backend -f "E:\GitHub\cc2538_ti_fw1010\driverlib\cc2538\examples\systick - rssi - trigger\projects\iar\settings\systick_int.Debug.driver.xcl" 
 
 @echo off 
 :end

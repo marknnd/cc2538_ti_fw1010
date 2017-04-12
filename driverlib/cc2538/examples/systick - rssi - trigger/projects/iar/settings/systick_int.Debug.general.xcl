@@ -2,7 +2,7 @@
 
 "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\bin\armxds2.dll" 
 
-"E:\OneDrive - Singapore University of Technology and Design\802154\OpenMote\swrc271a\cc2538_foundation_firmware_1_0_1_0\driverlib\cc2538\examples\systick - rssi - trigger\bin\iar\systick_int.out" 
+"E:\GitHub\cc2538_ti_fw1010\driverlib\cc2538\examples\systick - rssi - trigger\bin\iar\systick_int.out" 
 
 --plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\bin\armbat.dll" 
 
